@@ -1,0 +1,199 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.pic{
+    position: absolute;
+    z-index: -50;
+}
+
+.bodyStyle{
+    display: flex;
+    gap: 300px;
+    
+}
+
+.front_card{
+    background: url("./Assets/bg-card-front.jpg") no-repeat center/cover;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.logoo{
+    width: 85px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.front_text h1{
+    text-align: center;
+    color:  white;
+    font-size: larger;
+    letter-spacing: 7px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    font-weight: 600;
+    text-indent: 10px;
+}
+.front_text li{
+    color:  white;
+    font-size: larger;
+    font-weight: 600;
+    text-indent: 10px;
+    list-style-type: none;
+}
+.back_card{
+    background: url("./Assets/bg-card-back.jpg") no-repeat center/cover;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.back_card p{
+    position: absolute;
+    right: 45px;
+    top: 90px;
+    font-size: larger;
+    font-style: oblique;
+    font-weight: 600;
+
+
+
+}
+
+@media(min-width: 1024px){
+    .front_card, .back_card{
+        height: 240px;
+        width: 450px;
+        border-radius: 15px;
+    }
+}
+
+
+.styleForm{
+    padding-top: 130px;
+    padding-right: 100px;
+
+
+}
+
+.formD{
+    /* box-shadow: 0px 4px 4px 0px #00000040; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    letter-spacing: 3px;
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+}
+.formD label{
+    display: block;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formD .majInp{
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 330px;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+    
+
+
+}
+.formD .majInp::-webkit-outer-spin-button,
+    .majInp::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+}
+
+.majInp[type=number] {
+    -moz-appearance: textfield;
+}
+.formD input:focus {
+    outline: none;
+}
+.fix{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: hsl(278, 68%, 11%);
+    width: 350px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    padding-bottom: 7px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.fix .inp{
+    width: 120px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+
+}
+.fix .inp::-webkit-outer-spin-button,
+.inp::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+    margin: 0;
+}
+
+.inp[type=number] {
+-moz-appearance: textfield;
+}
+.ticki{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+
+}
+
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    place-items: center
+}
+.thanks h1,p{
+    padding-top: 20px;
+        font-size: larger;
+        text-align: center;
+        padding-left: 30px;
+        font-size: medium;
+        padding-bottom: 7px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
