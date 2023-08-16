@@ -82,7 +82,7 @@ function App() {
                         </label>
                     </article>
 
-                    <button onClick={() => setformDisplay(true)}>Confirm</button>
+                    <button onClick={() => setformDisplay(!formDisplay)}>Confirm</button>
                 </form> 
                 
             </div>}
@@ -101,7 +101,7 @@ function ThankYou({setformDisplay}){
             <img src={tick} alt="" className="ticki"></img>
             <h1>Thank you!</h1>
             <p>We've added your card details</p>
-            <button onClick={() => setformDisplay(true)}>Continue</button>
+            <button onClick={() => setformDisplay(!formDisplay)}>Continue</button>
         </div>
         </>
     )
